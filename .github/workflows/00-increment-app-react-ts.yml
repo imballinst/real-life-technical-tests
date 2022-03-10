@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
+          cache-dependency-path: examples/00-increment-app-react-ts
       - run: yarn
       - run: yarn test
       - run: yarn build
