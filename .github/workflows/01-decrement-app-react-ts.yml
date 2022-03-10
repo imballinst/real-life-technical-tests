@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - examples/01-decrement-app-react-ts
+      - examples/01-decrement-app-react-ts/**/*
 
 jobs:
   check:

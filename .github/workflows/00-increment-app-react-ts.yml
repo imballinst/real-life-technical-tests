@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - examples/00-increment-app-react-ts
+      - examples/00-increment-app-react-ts/**/*
 
 jobs:
   check:
