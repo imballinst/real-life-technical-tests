@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState<string>(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -11,7 +11,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button">count is: {count}</button>
+          <button type="button" onClick={() => setCount((old) => old + 1)}>
+            count is: {count}
+          </button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
